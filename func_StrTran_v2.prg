@@ -5,8 +5,9 @@
 * ที่มีอักขระตรงกับที่ระบุ (lcChgFrmVal) 
 * ให้เป็นชุดอักขระชุดอื่นๆที่ต้องการ (lcChgToVal)
 * และหากต้องการสามารถระบุให้แสดงการทำงานเพื่อการตรวจสอบ (lcDebugFlag="debug") ได้
-* demo : ?strtran_v2("A--B-----C--------D","--","-")
+* demo : ?StrTran_v2("A--B-----C--------D","--","-") => "A-B-C-D"
 * memo from author : สร้างเพื่อเพิ่มประสิทธิภาพให้ฟังก์ชั่น strtran สามารถวนหลายรอบเพื่อตัดอักขระพิเศษต่างๆ
+FUNCTION StrTran_v2
 PARAMETERS lcMasterVal,lcChgFrmVal,lcChgToVal,lcDebugFlag
 lnLoop = 0
 DO WHILE AT(lcChgFrmVal,lcMasterVal)<>0
