@@ -1,12 +1,12 @@
 *!
-*! Function: AAddElement( ARRAY @taArray, tuValueToAdd )
+*! Function: AddArElement( ARRAY @taArray, tuValueToAdd )
 *! Description: Adds a new element to the end of a 1D array.
 *! Parameters: 
 *!   taArray - The array reference (pass by reference using @).
 *!   tuValueToAdd - The value to add.
 *! Returns: .T. if successful, .F. otherwise.
 *!
-FUNCTION AAddElement(taArray, tuValueToAdd)
+FUNCTION AddArElement(taArray, tuValueToAdd)
     LOCAL lnOldSize, lnNewSize
     
     * ต้องส่งอาร์เรย์มาแบบ Reference (ใช้ @ หน้าชื่ออาร์เรย์ตอนเรียกใช้)
