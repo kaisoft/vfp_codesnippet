@@ -6,6 +6,17 @@
 *!   tuValueToAdd - The value to add.
 *! Returns: .T. if successful, .F. otherwise.
 *!
+*! Example
+*! - - - -
+*! LOCAL ARRAY laMyArray(1)  && เริ่มต้นด้วยขนาด 1 หรือ 0 ก็ได้
+*! laMyArray(1) = "Start"
+*!
+*! * เรียกใช้ฟังก์ชัน โดยต้องมี @ นำหน้าชื่ออาร์เรย์
+*! AddArElement(@laMyArray, "Apple")
+*! AddArElement(@laMyArray, "Banana")
+*! AddArElement(@laMyArray, "Orange")
+*! - - - -
+*!
 FUNCTION AddArElement(taArray, tuValueToAdd)
     LOCAL lnOldSize, lnNewSize
     
