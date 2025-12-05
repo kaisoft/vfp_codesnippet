@@ -5,7 +5,7 @@
 * author : kaisoft@hotmail.com , 2019-04-05
 * language : visual foxpro
 
-FUNCTION fnSaveFromUrl(_cWebAddress,_cTarget,_flagEdit)
+FUNCTION func_SaveFromUrl(_cWebAddress,_cTarget,_flagEdit)
 	LOCAL _cWebAddress,_cTarget
     _cUrl = _cWebAddress
 	DECLARE INTEGER URLDownloadToFile IN urlmon INTEGER, STRING, STRING, INTEGER, INTEGER
